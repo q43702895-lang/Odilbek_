@@ -1,76 +1,179 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oilam</title>
-  <link rel="stylesheet" href="oilam.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mening Oilam</title>
+  <link rel="stylesheet" href="oilam.css" />
 </head>
 
 <body>
-
-  <h1 class="title">Mening Oilam</h1>
-
-  <div class="container">
-
-    <!-- Ota Ona -->
-    <div class="card">
-      <img src="./adam.jpg" alt="Otam Onam">
-      <h2>Otam & Onam</h2>
-      <p>
-        Ra'no va Murtazo — otam va onam.  
-        Otam 12-iyun, oyim 26-dekabrda tug‘ilganlar.
+  <header class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="hero__kicker">Oilaviy sahifa</p>
+      <h1 class="hero__title">Mening Oilam</h1>
+      <p class="hero__subtitle">
+        Bu sahifada oilamiz haqida qisqacha va chiroyli tarzda ma’lumot berilgan.
       </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#members">A’zolar</a>
+        <a class="btn btn--ghost" href="https://odilbek-773.vercel.app/" target="_blank">
+          Loyihamni ko‘rish
+        </a>
+      </div>
     </div>
+  </header>
 
-    <!-- Opalar -->
-    <div class="card">
-      <img src="./Oyim.jpg" alt="Opalarim">
-      <h2>Opalarim</h2>
-      <p>
-        3 nafar opam bor.  
-        Hammalari oila qurgan, farzandlari bor.
-      </p>
-    </div>
+  <main class="wrap" id="members">
 
-    <!-- Umida opa -->
-    <div class="card">
-      <img src="./opam.jpg" alt="Umida opa">
-      <h2>Umida opa</h2>
-      <p>
-        15-sentabrda tug‘ilgan.  
-        Hozir 27 yoshda.
-      </p>
-    </div>
+    <!-- 1 -->
+    <section class="member reveal">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="./adam.jpg" alt="Otam va Onam" />
+          <div class="member__shine"></div>
+        </div>
 
-    <!-- Ruxshona opa -->
-    <div class="card">
-      <img src="./opam2.jpg" alt="Ruxshona opa">
-      <h2>Ruxshona opa</h2>
-      <p>
-        3-aprelda tug‘ilgan.  
-        Hozir 25 yoshda.
-      </p>
-    </div>
+        <div class="member__info">
+          <div class="badge">Oila tayanchi</div>
+          <h2 class="member__title">Otam &amp; Onam</h2>
+          <p class="member__text">
+            Ra’no va Murtazo — mening otam va onam. Ular oilamizning tayanchi,
+            tarbiya, mehr va mas’uliyatning eng katta namunasi.
+          </p>
 
-    <!-- Akam -->
-    <div class="card">
-      <img src="./akam.jpg" alt="Po‘lat aka">
-      <h2>Po‘lat akam</h2>
-      <p>
-        21-oktyabrda tug‘ilgan.  
-        Hozir 35 yoshda.
-      </p>
-    </div>
+          <ul class="member__meta">
+            <li><span>Tug‘ilgan:</span> Otam — 12-iyun, Onam — 26-dekabr</li>
+            <li><span>Qadriyat:</span> Mehr, tartib, halollik</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  </div>
+    <!-- 2 -->
+    <section class="member reveal member--reverse">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="./Oyim.jpg" alt="Opalarim" />
+          <div class="member__shine"></div>
+        </div>
 
-  <!-- Portfolio tugma -->
-  <a href="https://odilbek-773.vercel.app/" target="_blank" class="btn">
-    Loyihamni ko‘rish
-  </a>
+        <div class="member__info">
+          <div class="badge badge--violet">Mehrli opalar</div>
+          <h2 class="member__title">Opalarim</h2>
+          <p class="member__text">
+            Menda 3 nafar opa bor. Hammalari oila qurgan va farzandli.
+            Ular oilamizda doim iliqlik, mehr va qo‘llab-quvvatlash muhitini yaratadi.
+          </p>
 
+          <ul class="member__meta">
+            <li><span>Soni:</span> 3 nafar</li>
+            <li><span>Xususiyat:</span> Mehribon, g‘amxo‘r</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="member reveal">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="./opam.jpg" alt="Umida opa" />
+          <div class="member__shine"></div>
+        </div>
+
+        <div class="member__info">
+          <div class="badge badge--green">Katta opa</div>
+          <h2 class="member__title">Umida opa</h2>
+          <p class="member__text">
+            Umida opa — oilamizda mas’uliyat va tajriba bilan ajralib turadi.
+            U doim oqilona maslahat beradi va oilada birlikni mustahkamlaydi.
+          </p>
+
+          <ul class="member__meta">
+            <li><span>Tug‘ilgan:</span> 15-sentabr</li>
+            <li><span>Yosh:</span> 27</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="member reveal member--reverse">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="./opam2.jpg" alt="Ruxshona opa" />
+          <div class="member__shine"></div>
+        </div>
+
+        <div class="member__info">
+          <div class="badge badge--amber">Qulay kayfiyat</div>
+          <h2 class="member__title">Ruxshona opa</h2>
+          <p class="member__text">
+            Ruxshona opa — ijobiy energiya va samimiyat manbai.
+            U bilan suhbatlashsang kayfiyat ko‘tariladi, oilada doim iliqlik bo‘ladi.
+          </p>
+
+          <ul class="member__meta">
+            <li><span>Tug‘ilgan:</span> 3-aprel</li>
+            <li><span>Yosh:</span> 25</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 5 -->
+    <section class="member reveal">
+      <div class="member__card">
+        <div class="member__media">
+          <img src="./akam.jpg" alt="Po‘lat aka" />
+          <div class="member__shine"></div>
+        </div>
+
+        <div class="member__info">
+          <div class="badge badge--blue">Akam</div>
+          <h2 class="member__title">Po‘lat akam</h2>
+          <p class="member__text">
+            Po‘lat aka — oilamizda qat’iyat va ishonch ramzi.
+            U mehnatsevarligi bilan hamisha o‘rnak bo‘ladi va har doim yordamga tayyor.
+          </p>
+
+          <ul class="member__meta">
+            <li><span>Tug‘ilgan:</span> 21-oktyabr</li>
+            <li><span>Yosh:</span> 35</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="footer__card">
+        <h3 class="footer__title">Portfolio</h3>
+        <p class="footer__text">
+          Istasangiz, mening boshqa ishlarimni ham ko‘rishingiz mumkin.
+        </p>
+        <a class="btn btn--primary" href="https://odilbek-773.vercel.app/" target="_blank">
+          Loyihamni ko‘rish
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Scroll reveal (oddiy, lekin zo'r effekt)
+    const items = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-visible");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    items.forEach((el) => io.observe(el));
+  </script>
 </body>
-
 </html>
